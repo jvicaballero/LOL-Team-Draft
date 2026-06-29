@@ -1,0 +1,92 @@
+.team-details {
+  min-height: 100vh;
+  padding: 40px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.team-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #785a28;
+  padding-bottom: 20px;
+}
+
+.team-details-header h2 {
+  color: #c89b3c;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.team-details-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.team-details-champions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.team-details-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-details-slot-label {
+  font-size: 0.7rem;
+  color: #a0b4b7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-details-slot img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #785a28;
+  transition: border-color 0.2s;
+}
+
+.team-details-slot img:hover {
+  border-color: #c89b3c;
+}
+
+.team-details-slot-name {
+  color: #f0e6d3;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team-details-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: rgba(13, 27, 42, 0.9);
+  border: 1px solid #785a28;
+}
+
+.back-link {
+  display: inline-block;
+  color: #a0b4b7;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #c89b3c;
+}

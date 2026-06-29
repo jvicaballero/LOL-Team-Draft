@@ -50,7 +50,7 @@ const Home = () => {
         <div className="teams-grid">
           {teams.map(team => (
             <div key={team.id} className="team-card">
-              <div className="team-card-name">{team.name}</div>
+              <Link to={`/draft/${team.id}`} className="team-card-name">{team.name}</Link>
 
               <div className="team-card-champions">
                 {ROLES.map(role => {
