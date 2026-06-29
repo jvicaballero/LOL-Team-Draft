@@ -2,7 +2,7 @@
 
 Submitted by: **Jasper Caballero**
 
-About this web app: **App description here**
+About this web app: **A Fun League of Legends themed exercise to fully understand CRUD operations workflow for server-side work and client-side work**
 
 Time spent: **7** hours
 
