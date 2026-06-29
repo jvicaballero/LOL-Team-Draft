@@ -2,14 +2,14 @@
 
 #root {
     --font-family: Rubik, Verdana, sans-serif;
-    --primary: rgb(115, 2, 12);
-    --primary-hover: black;
-    --color: white;
-    --h1-color: var(--color);
-    --h2-color: var(--color);
-    --h3-color: var(--color);
-    --card-background-color: rgba(0, 0, 0, 0.8);
-    --card-sectionning-background-color: rgba(0, 0, 0, 0.8);
+    --primary: #c89b3c;
+    --primary-hover: #c8aa6e;
+    --color: #f0e6d3;
+    --h1-color: #c89b3c;
+    --h2-color: #c89b3c;
+    --h3-color: #f0e6d3;
+    --card-background-color: rgba(13, 27, 42, 0.9);
+    --card-sectionning-background-color: rgba(13, 27, 42, 0.9);
     --form-element-active-border-color: var(--color);
     --form-element-placeholder-color: gray;
 }

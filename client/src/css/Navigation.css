@@ -1,7 +1,40 @@
-nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(1, 10, 19, 0.95);
+  border-bottom: 1px solid #785a28;
+  padding: 0 60px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand a {
+  color: #c89b3c;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #a0b4b7;
+  text-decoration: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #c89b3c;
 }

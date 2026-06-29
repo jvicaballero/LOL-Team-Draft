@@ -1,0 +1,267 @@
+.create-draft {
+  min-height: 100vh;
+  padding: 40px 60px;
+}
+
+.create-draft h2 {
+  color: #c89b3c;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.8rem;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.team-name-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.team-name-input input {
+  background: rgba(13, 27, 42, 0.9);
+  border: 1px solid #785a28;
+  border-radius: 0;
+  color: #f0e6d3;
+  padding: 10px 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  width: 320px;
+  outline: none;
+}
+
+.team-name-input input:focus {
+  border-color: #c89b3c;
+}
+
+.team-name-input input::placeholder {
+  color: #4a5a6a;
+}
+
+/* Team slots */
+.team-slots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.role-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.role-slot-label {
+  font-size: 0.65rem;
+  color: #a0b4b7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.role-slot-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #785a28;
+  transition: border-color 0.2s;
+}
+
+.role-slot.active .role-slot-img {
+  border-color: #c89b3c;
+  box-shadow: 0 0 12px rgba(200, 155, 60, 0.5);
+}
+
+.role-slot-empty {
+  width: 80px;
+  height: 80px;
+  border: 2px dashed #785a28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a5a6a;
+  font-size: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.role-slot.active .role-slot-empty {
+  border-color: #c89b3c;
+  color: #c89b3c;
+}
+
+.role-slot-name {
+  font-size: 0.6rem;
+  color: #a0b4b7;
+  text-transform: uppercase;
+  max-width: 80px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Draft stats */
+.draft-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.draft-stat {
+  text-align: center;
+}
+
+.draft-stat-label {
+  font-size: 0.65rem;
+  color: #a0b4b7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.draft-stat-value {
+  font-size: 1.4rem;
+  color: #c89b3c;
+  font-weight: 700;
+}
+
+/* Strength bar */
+.strength-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.strength-bar-track {
+  width: 100%;
+  height: 10px;
+  background: #1e2d3d;
+  border: 1px solid #785a28;
+  overflow: hidden;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* Error */
+.draft-error {
+  text-align: center;
+  color: #e05252;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* Role filter tabs */
+.role-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.role-tab {
+  background: transparent;
+  border: 1px solid #785a28;
+  color: #a0b4b7;
+  padding: 6px 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.role-tab:hover {
+  border-color: #c89b3c;
+  color: #c89b3c;
+}
+
+.role-tab.active {
+  background: rgba(200, 155, 60, 0.15);
+  border-color: #c89b3c;
+  color: #c89b3c;
+}
+
+/* Champion grid */
+.champion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+  gap: 8px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 16px;
+  background: rgba(13, 27, 42, 0.7);
+  border: 1px solid #1e2d3d;
+  margin-bottom: 32px;
+}
+
+.champion-grid::-webkit-scrollbar {
+  width: 6px;
+}
+
+.champion-grid::-webkit-scrollbar-track {
+  background: #010a13;
+}
+
+.champion-grid::-webkit-scrollbar-thumb {
+  background: #785a28;
+}
+
+.champion-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px;
+  border: 2px solid transparent;
+  transition: all 0.15s;
+}
+
+.champion-icon:hover {
+  border-color: #c89b3c;
+  background: rgba(200, 155, 60, 0.08);
+}
+
+.champion-icon.selected {
+  border-color: #c89b3c;
+  background: rgba(200, 155, 60, 0.15);
+}
+
+.champion-icon.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.champion-icon img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+
+.champion-icon span {
+  font-size: 0.55rem;
+  color: #a0b4b7;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  text-align: center;
+  max-width: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.draft-submit {
+  display: flex;
+  justify-content: center;
+}

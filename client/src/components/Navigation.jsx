@@ -1,21 +1,19 @@
-import React from 'react'
-import '../App.css'
-import '../css/Navigation.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../css/Navigation.css';
 
 const Navigation = () => {
-    return (
-        <nav>
-            <ul>
-                <li><h1>Bolt Bucket 🏎️</h1></li>
-            </ul>
+  return (
+    <nav className="nav">
+      <div className="nav-brand">
+        <Link to="/">LoL Draft Sim</Link>
+      </div>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/draft/new">New Draft</Link>
+      </div>
+    </nav>
+  );
+};
 
-            <ul>
-                <li><a href='/' role='button'>Customize</a></li>
-                <li><a href='/customcars' role='button'>View Cars</a></li>
-            </ul>
-            
-        </nav>
-    )
-}
-
-export default Navigation
+export default Navigation;
