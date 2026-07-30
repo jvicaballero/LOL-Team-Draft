@@ -24,6 +24,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(favicon(path.resolve("../", "client", "public", "lightning.png")));
 } else if (process.env.NODE_ENV === "production") {
+  // app.use(favicon(path.resolve("public", "lightning.png")));
   app.use(express.static("public"));
 }
 
