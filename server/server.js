@@ -31,9 +31,9 @@ if (process.env.NODE_ENV === "development") {
 app.use("/api/", championsRouter);
 app.use("/api/", teamsRouter);
 
-if (process.env.NODE_ENV === "production") {
-  app.get("/*", (_, res) => res.sendFile(path.resolve("public", "index.html")));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.get("/*", (_, res) => res.sendFile(path.resolve("public", "index.html")));
+// }
 
 app.listen(PORT, () => {
   console.log(`server listening on http://localhost:${PORT}`);
